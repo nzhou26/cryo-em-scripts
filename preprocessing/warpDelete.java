@@ -8,12 +8,10 @@ import java.util.List;
 import java.util.Scanner;
 
 public class warpDelete {
-	private static final File TEMP_DIRECTORY = new File(System.getProperty("java.io.tmpdir"));
 	
 	public static ArrayList <String> read(String fileRead) throws Exception{
 		File file = new File (fileRead);
 		Scanner sc = new Scanner(file);
-		String compare ="default";
 		ArrayList <String> image = new ArrayList <String> ();
 		while (sc.hasNextLine()) { 
 			String fileContent = sc.nextLine();

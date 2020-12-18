@@ -10,7 +10,6 @@ import java.util.Scanner;
 
 public class imageSelecByRelionFromCtf {
 	
-	private static final File TEMP_DIRECTORY = new File(System.getProperty("java.io.tmpdir"));
 	
 	public static ArrayList <String> read(String fileRead) throws Exception{
 		File file = new File (fileRead);

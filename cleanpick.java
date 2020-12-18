@@ -1,10 +1,17 @@
 import java.io.File;
 import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
+
+/* author: Zhou Ningkun
+email: nzhou26@outlook.com
+cleapick.java is used for extracting coordinates and make it as per-micrograph star file
+use particles.star or run_data.star as input file
+This is a 
+*/
+
 
 public class cleanpick {
 	public static ArrayList <List<String>> read(String fileRead) throws Exception{
@@ -70,7 +77,8 @@ public class cleanpick {
 		}
 		
 	}
-	
+
+
 	public static void main (String [] args) throws Exception {
 		File selected = new File("clean_pick");
 		if (selected.exists()) {

@@ -9,8 +9,6 @@ All scripts written in java need to be compile first
     java cleanpick particle.star
 
 ###### cryoSPARCtoRelion.java
-Download the particle.cs file in cryoSPARC
-Run csparc2star.py first to get the star file
     java cryoSPARCtoRelion particle_from_relion.star particle_from_cryoSPARC.star output.star
 
 ###### def.py

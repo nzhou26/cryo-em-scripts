@@ -1,12 +1,12 @@
 # cryo-em-scripts
-some scriptes about cryoem including preprocessing, image selection, extract particle coordinates etc....
+Some scriptes about cryoem including preprocessing, image selection, extract particle coordinates etc....
 
 ## How to use these scripts:
 
 All scripts written in java need to be compile first
 
-#### cleanpick.java
-    java cleanpick particle.star
+#### clean_pyck.py
+    ./clean_py.py particles.star
 
 #### cryoSPARCtoRelion.java
     Download the particle.cs file in cryoSPARC

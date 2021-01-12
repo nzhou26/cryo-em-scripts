@@ -51,7 +51,7 @@ def writeHeader(fileName):
     out.write("_rlnAnglePsi #6")
     out.write("\n")
     out.close
-if (sys.argv != 1):
+if len(sys.argv) != 2:
     print("usage: ./clean_pyck.py particles.star")
     exit()
 f = open(sys.argv[1], "r")

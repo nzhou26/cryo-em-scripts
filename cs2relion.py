@@ -1,14 +1,11 @@
 #!/usr/bin/python3
 import sys
-import formatter
 def header(lines):
-    i = 0
-    lst = []
+    i = 5
     while i < 50:
-        if "_rln" in lines[i]:
-            lst.append(i)
-        i = i + 1
-    return lst[len(lst) - 1]
+        if "_rln" not in lines[i]:
+            return i
+        i = i + 1 
     
 def dealStar(lines):
     i = 0
@@ -43,6 +40,7 @@ out = open(sys.argv[3], "w")
 i = 0
 
 ##write header from relion file
+print(header(lines2))
 while i < header(lines2):
     out.write(lines2[i])
     i += 1
@@ -66,6 +64,7 @@ for line in content:
 ##match relion with desired
 content2 = getContent(lines2)
 j = 0
+
 for line in content2:
     row = []
     row.append(int(line[dealStar(lines2).index("_rlnImageName")].split("@")[0]))
